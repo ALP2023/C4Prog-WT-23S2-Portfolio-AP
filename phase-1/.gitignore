@@ -1,0 +1,8 @@
+### Add your supplemental ignored files below this line
+### Added by .... YYYY-MM-DD
+
+.idea
+.idea/
+.idea/*
+.idea/**
+evidence/
