@@ -1,0 +1,15 @@
+/* Header Styles */
+
+header {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header p {
+    font-size: 16px;
+}
