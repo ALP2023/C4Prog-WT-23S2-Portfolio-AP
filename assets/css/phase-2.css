@@ -1,19 +1,73 @@
 /* Header Styles */
 
-header {
-    background-color: #333333;
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
     color: white;
     padding: 20px;
 }
-
-header h1 {
-    font-size: 24px;
+.header-title {
+    flex-grow: 1;
+    background-color: black;
+    color: white;
+    padding: 10px;
 }
 
-header p {
+.header-title h1 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.header-title p {
     font-size: 16px;
     text-align: center;
+    margin: 0;
 }
+h2 {
+    font-size: 20px;
+    margin: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+p {
+    margin: 10px;
+    font-family: Calibri, serif;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+
+.hamburger-menu {
+    display: none; /* Hide by default on larger screens */
+    cursor: pointer;
+    margin-left: 20px; /* Add some space between the menu and content */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
 /* Main Styles */
 main {
     background-color: white;
@@ -27,6 +81,18 @@ footer {
     color: white;
     padding: 20px;
 }
+
+/* Media Query to Show Hamburger Icon on Mobile */
+@media screen and (max-width: 767px) {
+    .hamburger-menu {
+        display: block; /* Show on smaller screens */
+    }
+    /* Additional styles for the hamburger icon when it's visible */
+    .bar {
+        transition: 0.4s;
+    }
+}
+
 /* Media Query for Tablets */
 @media screen and (min-width: 768px) {
     /* Adjust the styles for tablets here */
