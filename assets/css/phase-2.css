@@ -12,16 +12,40 @@ header h1 {
 
 header p {
     font-size: 16px;
+    text-align: center;
 }
 /* Main Styles */
 main {
     background-color: white;
     color: black;
     padding: 20px;
+
 }
 /* Footer Styles */
 footer {
     background-color: #666666;
-    color: black;
+    color: white;
     padding: 20px;
+}
+/* Media Query for Tablets */
+@media screen and (min-width: 768px) {
+    /* Adjust the styles for tablets here */
+    header, main, footer {
+        padding: 40px; /* Example: Increase padding for tablets */
+    }
+}
+
+/* Media Query for Desktops */
+@media screen and (min-width: 1024px) {
+    /* Adjust the styles for desktops here */
+    header, main, footer {
+        padding: 60px; /* Example: Increase padding for desktops */
+    }
+}
+
+/* Hide Navigation and Aside for Mobile View */
+@media screen and (max-width: 767px) {
+    nav, aside {
+        display: none;
+    }
 }
