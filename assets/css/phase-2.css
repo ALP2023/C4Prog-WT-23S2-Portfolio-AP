@@ -129,19 +129,18 @@ footer {
     }
 
     main {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-gap: 10px;
+    }
+
+    .desktop-article-container {
         display: flex;
         flex-direction: column;
-        width: 90%;
-        padding: 10px;
-        margin: auto;
     }
 
     article {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        padding: 20px;
-        margin-bottom: 10px;
+        margin: 0 20px 10px 0;
     }
 
     article header {
@@ -149,12 +148,10 @@ footer {
         color: white;
         padding: 10px;
         margin: auto;
-        width: 100%;
     }
 
     article h2 {
         font-size: 24px; /* Increase font size for headers */
-        width: 100%;
         padding: 10px 0;
     }
 
@@ -162,7 +159,6 @@ footer {
         margin: auto;
         padding: 10px;
         background-color: #cccccc;
-        width: 100%;
     }
 
     article section p {
@@ -171,7 +167,6 @@ footer {
     }
 
     article footer {
-        width: 100%;
         background-color: #999999;
         color: white;
         padding: 10px;
@@ -190,9 +185,25 @@ footer {
     footer {
         font-size: 18px; /* Increase font size for footers */
     }
-
+    .desktop-aside-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     aside {
-        display: none;
+        background-color: #cccccc;
+    }
+
+    aside section {
+        padding: 10px;
+    }
+
+    aside footer {
+        background-color: #999999;
+        color: white;
+        padding: 20px;
+        font-size: 16px; /* Increase font size for footers */
+        margin: auto;
     }
 }
 
