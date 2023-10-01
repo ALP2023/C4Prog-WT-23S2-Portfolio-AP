@@ -113,7 +113,7 @@ footer {
     }
 
     .header-title p {
-        font-size: 18px; /* Increase font size for desktop */
+        font-size: 20px; /* Increase font size for desktop */
     }
 
     .desktop-nav-container {
@@ -146,7 +146,7 @@ footer {
     }
 
     article h2 {
-        font-size: 28px; /* Increase font size for headers */
+        font-size: 24px; /* Increase font size for headers */
         width: 100%;
         padding: 10px 0;
     }
@@ -180,7 +180,13 @@ footer {
         margin-bottom: 0;
     }
 
+    footer {
+        font-size: 18px; /* Increase font size for footers */
+    }
 
+    aside {
+        display: none;
+    }
 }
 
 /* Hide Navigation and Aside for Mobile View */
