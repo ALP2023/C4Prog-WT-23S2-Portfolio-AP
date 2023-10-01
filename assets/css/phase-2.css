@@ -31,7 +31,7 @@
 
 h2 {
     font-size: 20px;
-    background-color: black;
+    background-color: #333333;
     color: white;
     padding: 10px;
     width: 100%;
@@ -121,9 +121,67 @@ footer {
         padding: 20px;
     }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 10px;
+        margin: auto;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    article header {
+        background-color: #333333;
+        color: white;
+        padding: 10px;
+        margin: auto;
+        width: 100%;
+    }
+
+    article h2 {
+        font-size: 28px; /* Increase font size for headers */
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    article section {
+        margin: auto;
+        padding: 10px;
+        background-color: #cccccc;
+        width: 100%;
+    }
+
+    article section p {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    article footer {
+        width: 100%;
+        background-color: #999999;
+        color: white;
+        padding: 10px;
+        font-size: 16px; /* Increase font size for footers */
+    }
+
+    article header, article footer {
+        height: 50px;
+    }
+
+    /* Remove margin from the last article to prevent extra spacing */
+    article:last-child {
+        margin-bottom: 0;
+    }
+
 
 }
-
 
 /* Hide Navigation and Aside for Mobile View */
 @media screen and (max-width: 767px) {
