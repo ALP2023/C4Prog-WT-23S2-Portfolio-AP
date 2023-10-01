@@ -1,5 +1,4 @@
 /* Header Styles */
-
 .header-content {
     display: flex;
     justify-content: space-between;
@@ -79,6 +78,14 @@ main {
     padding: 20px;
 }
 
+article {
+    width: 100%;
+}
+
+article {
+    width: 100%; /* Set article width to 100% to stack vertically */
+    margin-bottom: 10px; /* Increase space between articles on mobile */
+}
 /* Footer Styles */
 footer {
     background-color: #666666;
