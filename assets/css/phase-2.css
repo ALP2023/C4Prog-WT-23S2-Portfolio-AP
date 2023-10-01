@@ -185,27 +185,42 @@ footer {
     footer {
         font-size: 18px; /* Increase font size for footers */
     }
+
     .desktop-aside-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-    }
-    aside {
-        background-color: #cccccc;
     }
 
-    aside section {
+    aside {
+        margin: 0 20px 20px 0;
+    }
+
+    aside header {
+        background-color: #333333;
+        color: white;
+        font-size: 16px;
         padding: 10px;
+        margin: auto;
+    }
+
+    aside section section{
+        padding: 10px;
+        background-color: #cccccc;
     }
 
     aside footer {
         background-color: #999999;
         color: white;
-        padding: 20px;
-        font-size: 16px; /* Increase font size for footers */
-        margin: auto;
+        padding: 10px;
+        font-size: 12px; /* Increase font size for footers */
+        margin: 0 auto;
+    }
+
+    aside header, aside footer {
+        height: 20px;
     }
 }
+
 
 /* Hide Navigation and Aside for Mobile View */
 @media screen and (max-width: 767px) {
