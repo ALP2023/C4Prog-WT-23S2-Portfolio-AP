@@ -1,0 +1,229 @@
+/* Header Styles */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.header-title {
+    flex-grow: 1;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center
+}
+
+.header-title h1 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.header-title p {
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    font-size: 20px;
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 10px;
+    font-family: Calibri, serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.hamburger-menu {
+    display: none; /* Hide by default on larger screens */
+    cursor: pointer;
+    margin-left: 20px; /* Add some space between the menu and content */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Main Styles */
+main {
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+article {
+    width: 100%;
+}
+
+article {
+    width: 100%; /* Set article width to 100% to stack vertically */
+    margin-bottom: 10px; /* Increase space between articles on mobile */
+}
+/* Footer Styles */
+footer {
+    background-color: #666666;
+    color: white;
+    padding: 20px;
+}
+
+/* Media Query to Show Hamburger Icon on Mobile */
+@media screen and (max-width: 767px) {
+    .hamburger-menu {
+        display: block; /* Show on smaller screens */
+    }
+    /* Additional styles for the hamburger icon when it's visible */
+    .bar {
+        transition: 0.4s;
+    }
+}
+
+/* Media Query for Tablets */
+@media screen and (min-width: 768px) {
+    /* Adjust the styles for tablets here */
+    header, main, footer {
+        padding: 40px; /* Increase padding for tablets */
+    }
+}
+
+/* Media Query for Desktops */
+@media screen and (min-width: 1024px) {
+    /* Adjust the styles for desktops here */
+    .header-title h1 {
+        font-size: 36px; /* Increase font size for desktop */
+    }
+
+    .header-title p {
+        font-size: 20px; /* Increase font size for desktop */
+    }
+
+    .desktop-nav-container {
+        background-color: #cccccc;
+        padding: 20px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-gap: 10px;
+    }
+
+    .desktop-article-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        margin: 0 20px 10px 0;
+    }
+
+    article header {
+        background-color: #333333;
+        color: white;
+        padding: 10px;
+        margin: auto;
+    }
+
+    article h2 {
+        font-size: 24px; /* Increase font size for headers */
+        padding: 10px 0;
+    }
+
+    article section {
+        margin: auto;
+        padding: 10px;
+        background-color: #cccccc;
+    }
+
+    article section p {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    article footer {
+        background-color: #999999;
+        color: white;
+        padding: 10px;
+        font-size: 16px; /* Increase font size for footers */
+    }
+
+    article header, article footer {
+        height: 50px;
+    }
+
+    /* Remove margin from the last article to prevent extra spacing */
+    article:last-child {
+        margin-bottom: 0;
+    }
+
+    footer {
+        font-size: 18px; /* Increase font size for footers */
+    }
+
+    .desktop-aside-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        margin: 0 20px 20px 0;
+    }
+
+    aside header {
+        background-color: #333333;
+        color: white;
+        font-size: 16px;
+        padding: 10px;
+        margin: auto;
+    }
+
+    aside section section{
+        padding: 10px;
+        background-color: #cccccc;
+    }
+
+    aside footer {
+        background-color: #999999;
+        color: white;
+        padding: 10px;
+        font-size: 12px; /* Increase font size for footers */
+        margin: 0 auto;
+    }
+
+    aside header, aside footer {
+        height: 20px;
+    }
+}
+
+/* Hide Navigation and Aside for Mobile View */
+@media screen and (max-width: 767px) {
+    nav, aside {
+        display: none;
+    }
+}
