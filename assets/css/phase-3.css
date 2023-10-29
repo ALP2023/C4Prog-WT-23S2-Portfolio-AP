@@ -3,14 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #000080;
     color: white;
     padding: 20px;
 }
 
 .header-title {
     flex-grow: 1;
-    background-color: black;
     color: white;
     padding: 10px;
     text-align: center
@@ -30,7 +29,7 @@
 
 h2 {
     font-size: 20px;
-    background-color: #333333;
+    background-color: #00827F;
     color: white;
     padding: 10px;
     width: 100%;
@@ -73,7 +72,7 @@ nav ul li {
 
 /* Main Styles */
 main {
-    background-color: white;
+    background-color: #E3E4E1;
     color: black;
     padding: 20px;
 }
@@ -88,7 +87,7 @@ article {
 }
 /* Footer Styles */
 footer {
-    background-color: #666666;
+    background-color: #000080;
     color: white;
     padding: 20px;
 }
@@ -124,7 +123,7 @@ footer {
     }
 
     .desktop-nav-container {
-        background-color: #cccccc;
+        background-color: #E3E4E1;
         padding: 20px;
     }
 
@@ -144,7 +143,7 @@ footer {
     }
 
     article header {
-        background-color: #333333;
+        background-color: #00827F;
         color: white;
         padding: 10px;
         margin: auto;
@@ -158,7 +157,7 @@ footer {
     article section {
         margin: auto;
         padding: 10px;
-        background-color: #cccccc;
+        background-color: white;
     }
 
     article section p {
@@ -167,7 +166,7 @@ footer {
     }
 
     article footer {
-        background-color: #999999;
+        background-color: #666666;
         color: white;
         padding: 10px;
         font-size: 16px; /* Increase font size for footers */
@@ -196,7 +195,7 @@ footer {
     }
 
     aside header {
-        background-color: #333333;
+        background-color: #000080;
         color: white;
         font-size: 16px;
         padding: 10px;
@@ -205,11 +204,11 @@ footer {
 
     aside section section{
         padding: 10px;
-        background-color: #cccccc;
+        background-color: white;
     }
 
     aside footer {
-        background-color: #999999;
+        background-color: #00827F;
         color: white;
         padding: 10px;
         font-size: 12px; /* Increase font size for footers */
