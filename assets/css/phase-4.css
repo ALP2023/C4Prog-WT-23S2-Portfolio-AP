@@ -17,7 +17,6 @@
 
 .header-title h1 {
     font-size: 24px;
-    margin: 0;
     margin-bottom: 20px;
 }
 
@@ -93,6 +92,22 @@ footer {
     padding: 20px;
 }
 
+#joke-form button {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #000080;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+#jokeResponse {
+    font-size: 24px;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 20px;
+}
+
 /* Media Query to Show Hamburger Icon on Mobile */
 @media screen and (max-width: 767px) {
     .hamburger-menu {
@@ -110,23 +125,40 @@ footer {
     header, main, footer {
         padding: 40px; /* Increase padding for tablets */
     }
+    article h2 {
+        font-size: 26px; /* Increase font size for headers */
+        font-weight: bold;
+        padding: 10px 0;
+        width: 100%; /* Maintain 100% width for headers */
+    }
+    aside header {
+        font-size: 20px; /* Define font size for aside headers on tablets */
+    }
 
+    aside section {
+        font-size: 18px; /* Define font size for text inside aside sections on tablets */
+    }
+
+    aside footer {
+        font-size: 14px; /* Define font size for aside footers on tablets */
+    }
 }
 
 /* Media Query for Desktops */
 @media screen and (min-width: 1024px) {
     /* Adjust the styles for desktops here */
     .header-title h1 {
-        font-size: 36px; /* Increase font size for desktop */
+        font-size: 48px; /* Increase font size for desktop */
+        font-weight: bold;
     }
 
     .header-title p {
-        font-size: 20px; /* Increase font size for desktop */
+        font-size: 24px; /* Increase font size for desktop */
     }
 
     .desktop-nav-container {
-        background-color: #E3E4E1;
-        padding: 20px;
+        background-color: white;
+        padding: 24px;
     }
 
     main {
@@ -150,10 +182,12 @@ footer {
         color: white;
         padding: 10px;
         margin: auto;
+        height: auto;
     }
 
     article h2 {
-        font-size: 26px; /* Increase font size for headers */
+        font-size: 30px; /* Increase font size for headers */
+        font-weight: bold;
         padding: 10px 0;
     }
 
@@ -164,7 +198,7 @@ footer {
     }
 
     article section p {
-        font-size: 22px;
+        font-size: 26px;
         padding: 0;
     }
 
@@ -173,11 +207,9 @@ footer {
         color: white;
         padding: 10px;
         font-size: 16px; /* Increase font size for footers */
-    }
-
-    article header, article footer {
         height: 50px;
     }
+
 
     /* Remove margin from the last article to prevent extra spacing */
     article:last-child {
@@ -185,7 +217,7 @@ footer {
     }
 
     footer {
-        font-size: 18px; /* Increase font size for footers */
+        font-size: 24px; /* Increase font size for footers */
     }
 
     .desktop-aside-container {
@@ -200,12 +232,14 @@ footer {
     aside header {
         background-color: #000080;
         color: white;
-        font-size: 16px;
+        font-size: 20px;
         padding: 10px;
         margin: auto;
+        height: auto;
     }
 
     aside section section{
+        font-size: 18px;
         padding: 10px;
         background-color: white;
     }
@@ -214,13 +248,11 @@ footer {
         background-color: #00827F;
         color: white;
         padding: 10px;
-        font-size: 12px; /* Increase font size for footers */
+        font-size: 14px; /* Increase font size for footers */
         margin: 0 auto;
-    }
-
-    aside header, aside footer {
         height: 20px;
     }
+
 }
 
 /* Hide Navigation and Aside for Mobile View */
