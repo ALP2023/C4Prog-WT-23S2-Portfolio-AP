@@ -79,12 +79,13 @@ main {
 
 article {
     width: 100%;
+    margin-bottom: 10px;
 }
 
-article {
-    width: 100%; /* Set article width to 100% to stack vertically */
-    margin-bottom: 10px; /* Increase space between articles on mobile */
+.article-image {
+    width: 100%;
 }
+
 /* Footer Styles */
 footer {
     background-color: #000080;
@@ -109,6 +110,7 @@ footer {
     header, main, footer {
         padding: 40px; /* Increase padding for tablets */
     }
+
 }
 
 /* Media Query for Desktops */
@@ -136,6 +138,7 @@ footer {
     .desktop-article-container {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     article {
@@ -150,7 +153,7 @@ footer {
     }
 
     article h2 {
-        font-size: 24px; /* Increase font size for headers */
+        font-size: 26px; /* Increase font size for headers */
         padding: 10px 0;
     }
 
@@ -161,7 +164,7 @@ footer {
     }
 
     article section p {
-        font-size: 18px;
+        font-size: 22px;
         padding: 0;
     }
 
