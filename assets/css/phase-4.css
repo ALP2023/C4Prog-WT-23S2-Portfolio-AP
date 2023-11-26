@@ -146,7 +146,7 @@ footer {
 
 /* Media Query for Desktops */
 @media screen and (min-width: 1024px) {
-    /* Adjust the styles for desktops here */
+    /* Adjust the styles for desktops min-width: 1024pxhere */
     .header-title h1 {
         font-size: 48px; /* Increase font size for desktop */
         font-weight: bold;
