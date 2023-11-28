@@ -1,8 +1,8 @@
 document.getElementById("getJokeButton").addEventListener("click", function() {
-    var limit = parseInt(document.getElementById("jokeCount").value);;
-    var maxLimit = 10;
-    var JOKE_URL = "https://api.api-ninjas.com/v1/jokes";
-    var apiKey = "CrHOHMID6drn+8lkQpBlZA==PvYTcv5w2nSQYIMJ";
+    let limit = parseInt(document.getElementById("jokeCount").value);;
+    let maxLimit = 10;
+    let JOKE_URL = "https://api.api-ninjas.com/v1/jokes";
+    let apiKey = "CrHOHMID6drn+8lkQpBlZA==PvYTcv5w2nSQYIMJ";
 
     if (isNaN(limit) || limit >= maxLimit) {
         $("#jokeResponse").text("Please enter a valid number of jokes, up to a maximum of " + maxLimit + ".");
